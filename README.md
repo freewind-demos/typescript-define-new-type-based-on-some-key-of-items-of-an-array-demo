@@ -1,19 +1,15 @@
-TypeScript tsconfig.json Demo
-============================
+TypeScript Define a New Type Based on Some Key of Items of an Array Demo
+========================================================================
 
-`tsconfig.json`是typescript项目的说明文件，指定`tsc`所需要的各个参数。
+我们能否由一个已有的数组上的元素中的值来定义一个全新的类型？
+
+https://stackoverflow.com/questions/53394285/how-to-define-a-new-type-based-on-some-key-of-items-of-an-array
+
+答案是目前还不行，不过可以有一些变通的手段。
+不直接定义一个数组，而是把元素们传入一个特殊构建的函数中，以取得每个元素的类型，最后再整合。
 
 ```
 npm install
-npm run tsc
 ```
 
-或者使用`ts-node`:
-
-```
-npm run demo
-```
-
-Resources
----------
-- tsconfig详解：<https://www.typescriptlang.org/docs/handbook/tsconfig-json.html>
+Then open it in your webstorm. You will see the compilation errors.
